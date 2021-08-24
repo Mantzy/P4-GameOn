@@ -1,0 +1,4 @@
+vanilla javascript
+input
+feedback for input
+check the responsiveness
