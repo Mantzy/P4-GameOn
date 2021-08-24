@@ -54,12 +54,17 @@ function submitRes() {
     }
 
     //checking if all details are valid
-    if (reservation.first != "" && reservation.last != "" && reservation.birthdate != "" && reservation.quantity != "" && ValidateEmail(reservation.email) != false) {
+    if (reservation.first != "" && reservation.first.length >= 2 && reservation.last != "" && reservation.last.length >= 2 && reservation.birthdate != "" && reservation.quantity != "" && ValidateEmail(reservation.email) != false) {
         alert('Thank you!')
+
 
 
     } else if (reservation.first != "" && reservation.last != "" && reservation.birthdate != "" && reservation.quantity != "" && ValidateEmail(reservation.email) == false) {
         alert('Please use a valid e-mail address!')
+    } else if (reservation.first != "" && reservation.first.length < 2 && reservation.last != "" && reservation.birthdate != "" && reservation.quantity != "" && ValidateEmail(reservation.email) != false) {
+        alert('Your first name must be at least 2 character long!')
+    } else if (reservation.first != "" && reservation.first.length >= 2 && reservation.last != "" && reservation.last.length < 2 && reservation.birthdate != "" && reservation.quantity != "" && ValidateEmail(reservation.email) != false) {
+        alert('Your last name must be at least 2 character long!')
     } else {
         alert('Please fill all the fields!')
     }
