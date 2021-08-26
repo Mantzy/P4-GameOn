@@ -44,7 +44,7 @@ function submitRes() {
         preventDefault()
     } else {
         alert('Please fill all the fields!')
-        preventDefault()
+
     }
 
 

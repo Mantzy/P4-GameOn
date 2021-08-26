@@ -56,23 +56,24 @@
                     <form name="reserve" action="index.html" method="get" onsubmit="return validate();">
                         <div class="formData">
                             <label>First Name</label><br>
-                            <input class="text-control" type="text" id="first" name="first" minlength="2" /><br>
+                            <input class="text-control" type="text" id="first" name="first" minlength="2" required/><br>
+                            <div class="error" id="firstError"></div>
                         </div>
                         <div class="formData">
                             <label>Last Name</label><br>
-                            <input class="text-control" type="text" id="last" name="last" minlength="2" /><br>
+                            <input class="text-control" type="text" id="last" name="last" minlength="2" required/><br>
                         </div>
                         <div class="formData">
                             <label>Email</label><br>
-                            <input class="text-control" type="email" id="email" name="email" /><br>
+                            <input class="text-control" type="email" id="email" name="email" required/><br>
                         </div>
                         <div class="formData">
                             <label>Birthdate</label><br>
-                            <input class="text-control" type="date" id="birthdate" name="birthdate" /><br>
+                            <input class="text-control" type="date" id="birthdate" name="birthdate" required/><br>
                         </div>
                         <div class="formData">
                             <label>How many tournaments have you attended? </label><br>
-                            <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
+                            <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" required>
                         </div>
                         <p class="text-label">Which location?</p>
                         <div class="formData">
@@ -144,6 +145,7 @@
                   class="checkbox-input"
                   type="checkbox"
                   id="checkbox1"
+                  name="checkbox1"
                   checked
                 />
                 <label class="checkbox2-label" for="checkbox1" required>
@@ -162,20 +164,18 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="bgSubmit" id="success">
-            <div class="content">
-                <span class="close"></span>
-                <div class="modal-body">
-
+            <div class="bgSubmit" id="success">
+                <div class="content">
+                    <span class="close"></span>
                     <p class="hero-text">
-                        Thank you for submitting your registration details!
+                        Thanks for your submission!<br> We were happy to hear from <br> You!
                     </p>
-                    <input class="btn-close" type="submit" class="button" value="Close" />
-
+                    <!--Close Button Here-->
+                    <input class="btn-submit" type="submit" class="button" value="Close" />
                 </div>
             </div>
         </div>
+
     </main>
     <footer>
         <p class="copyrights">
@@ -183,7 +183,7 @@
         </p>
     </footer>
     <script src="js/modal.js"></script>
-    <script src="js/form.js"></script>
+    <script src="js/form2.js"></script>
 </body>
 
 </html>
