@@ -181,12 +181,14 @@
     </footer>
     <div class="bgSubmit" id="success">
         <div class="content" id="success-content">
-            <span class="close"></span>
-            <p class="hero-text" id="success-text">
-                Thank you for<br> submitting your <br> registration details
-            </p>
-            <!--Close Button Here-->
-            <input class="btn-submit" type="submit" id="submit-success" class="button" value="Close" />
+            <form onsubmit="closeBtn();">
+                <span class="close" id="sucClose"></span>
+                <p class="hero-text" id="success-text">
+                    Thank you for<br> submitting your <br> registration details
+                </p>
+                <!--Close Button Here-->
+                <input class="btn-submit" type="submit" id="submit-success" class="button" value="Close" />
+            </form>
         </div>
     </div>
     </div>

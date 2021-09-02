@@ -12,6 +12,9 @@ const modalbg = document.querySelector(".bground");
 const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
 const modalClose = document.querySelectorAll(".close");
+//const modalSuc = document.querySelectorAll(".bgSubmit");
+const modalSucClose = document.querySelectorAll("#sucClose");
+const modalSucBtn = document.querySelectorAll("#submit-success")
 
 
 // launch modal event
@@ -28,4 +31,21 @@ modalClose.forEach((btn) => btn.addEventListener("click", closeModal));
 //close modal form
 function closeModal() {
     modalbg.style.display = "none"
+}
+
+//close submit success page
+modalSucClose.forEach((btn) => btn.addEventListener("click", closeSuc));
+
+//modalSucBtn.forEach((btn) => btn.addEventListener("click", closeSucBtn));
+
+function closeSuc() {
+    document.getElementById('success').style.display = "none"
+}
+
+/*function closeSucBtn() {
+    document.getElementById('success').style.display = "none"
+}*/
+
+function closeBtn() {
+    document.getElementById('success').style.display = "none"
 }
