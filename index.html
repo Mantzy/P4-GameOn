@@ -62,23 +62,29 @@
                         <div class="formData">
                             <label>Last Name</label><br>
                             <input class="text-control" type="text" id="last" name="last" minlength="2" required/><br>
+                            <div class="error" id="lastError"></div>
                         </div>
                         <div class="formData">
                             <label>Email</label><br>
                             <input class="text-control" type="email" id="email" name="email" required/><br>
+                            <div class="error" id="mailError"></div>
                         </div>
                         <div class="formData">
                             <label>Birthdate</label><br>
                             <input class="text-control" type="date" id="birthdate" name="birthdate" required/><br>
+                            <div class="error" id="birthdateError"></div>
                         </div>
                         <div class="formData">
                             <label>How many tournaments have you attended? </label><br>
                             <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" required>
+                            <div class="error" id="quantityError"></div>
                         </div>
                         <p class="text-label">Which location?</p>
                         <div class="formData">
                             <input class="checkbox-input" type="radio" id="location1" name="location" value="New York" />
+                            <div class="error" id="locationError"></div>
                             <label class="checkbox-label" for="location1">
+                              
                   <span class="checkbox-icon"></span>
                   New York</label
                 >
@@ -152,6 +158,7 @@
                   <span class="checkbox-icon"></span>
                   I have read and I agree to the terms and conditions.
                 </label>
+                            <div class="error" id="termsError"></div>
                             <br>
                             <input class="checkbox-input" type="checkbox" id="checkbox2" value="yes" />
                             <label class="checkbox2-label" for="checkbox2">
