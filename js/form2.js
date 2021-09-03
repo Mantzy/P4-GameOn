@@ -36,7 +36,7 @@ function validate() {
 
     var location = document.reserve.location.value;
     var terms = document.reserve.checkbox1;
-
+    var signup = document.reserve.checkbox;
 
     var firstError = true;
     var lastError = true;

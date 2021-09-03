@@ -30,22 +30,24 @@ modalClose.forEach((btn) => btn.addEventListener("click", closeModal));
 
 //close modal form
 function closeModal() {
-    modalbg.style.display = "none"
+    modalbg.style.display = "none";
 }
 
 //close submit success page
 modalSucClose.forEach((btn) => btn.addEventListener("click", closeSuc));
 
-//modalSucBtn.forEach((btn) => btn.addEventListener("click", closeSucBtn));
+
 
 function closeSuc() {
-    document.getElementById('success').style.display = "none"
+    document.getElementById('success').style.display = "none";
 }
+
+modalSucBtn.forEach((btn) => btn.addEventListener("click", closeModal));
 
 /*function closeSucBtn() {
     document.getElementById('success').style.display = "none"
 }*/
 
 function closeBtn() {
-    document.getElementById('success').style.display = "none"
+    //document.getElementById('success').style.display = "none"
 }
