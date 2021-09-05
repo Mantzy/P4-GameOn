@@ -34,7 +34,7 @@ function closeModal() {
 }
 
 //close submit success page
-modalSucClose.forEach((btn) => btn.addEventListener("click", closeSuc));
+/*modalSucClose.forEach((btn) => btn.addEventListener("click", closeSuc));
 
 
 
@@ -44,10 +44,10 @@ function closeSuc() {
 
 modalSucBtn.forEach((btn) => btn.addEventListener("click", closeModal));
 
-/*function closeSucBtn() {
+function closeSucBtn() {
     document.getElementById('success').style.display = "none"
-}*/
+}
 
 function closeBtn() {
     //document.getElementById('success').style.display = "none"
-}
+}*/

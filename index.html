@@ -160,7 +160,7 @@
                   I have read and I agree to the terms and conditions.
                 </label>
                             <div class="error" id="termsError"></div>
-                            <br>
+
                             <input class="checkbox-input" type="checkbox" id="checkbox2" value="yes" />
                             <label class="checkbox2-label" for="checkbox2">
                   <span class="checkbox-icon"></span>
@@ -182,14 +182,14 @@
     </footer>
     <div class="bgSubmit bground" id="success">
         <div class="content" id="success-content">
-            <form onsubmit="closeBtn();">
-                <span class="close" id="sucClose"></span>
-                <p class="hero-text" id="success-text">
-                    Thank you for<br> submitting your <br> registration details
-                </p>
-                <!--Close Button Here-->
-                <input class="btn-submit" type="submit" id="submit-success" class="button" value="Close" />
-            </form>
+
+            <span class="close" id="sucClose" onclick="setTimeout(function () { window.location.reload(); }, 2)"></span>
+            <p class="hero-text" id="success-text">
+                Thank you for<br> submitting your <br> registration details
+            </p>
+            <!--Close Button Here-->
+            <input class="btn-submit" type="submit" id="submit-success" class="button" value="Close" onclick="setTimeout(function () { window.location.reload(); }, 2)" />
+
         </div>
     </div>
     </div>
