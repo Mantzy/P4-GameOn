@@ -176,7 +176,7 @@ main {
 #success {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 9000;
     left: 0;
     top: 0;
     min-height: 100%;

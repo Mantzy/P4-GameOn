@@ -13,8 +13,8 @@ const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
 const modalClose = document.querySelectorAll(".close");
 //const modalSuc = document.querySelectorAll(".bgSubmit");
-const modalSucClose = document.querySelectorAll("#sucClose");
-const modalSucBtn = document.querySelectorAll("#submit-success")
+const modalSucClose = document.getElementById("sucClose");
+const modalSucBtn = document.getElementById("submit-success");
 
 
 // launch modal event
@@ -31,23 +31,14 @@ modalClose.forEach((btn) => btn.addEventListener("click", closeModal));
 //close modal form
 function closeModal() {
     modalbg.style.display = "none";
+
 }
 
 //close submit success page
-/*modalSucClose.forEach((btn) => btn.addEventListener("click", closeSuc));
+modalSucBtn.addEventListener("click", function() {
+    setTimeout(function() { window.location.reload(); }, 2)
+})
 
-
-
-function closeSuc() {
-    document.getElementById('success').style.display = "none";
-}
-
-modalSucBtn.forEach((btn) => btn.addEventListener("click", closeModal));
-
-function closeSucBtn() {
-    document.getElementById('success').style.display = "none"
-}
-
-function closeBtn() {
-    //document.getElementById('success').style.display = "none"
-}*/
+modalSucClose.addEventListener("click", function() {
+    setTimeout(function() { window.location.reload(); }, 2)
+})
