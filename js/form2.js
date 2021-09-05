@@ -111,9 +111,15 @@ function validate() {
         document.getElementById('quantityError').innerHTML = "Please enter a number!"
         quantityError = true;
     } else {
-        quantityError = false;
-        document.getElementById('quantity').style.borderColor = "black";
-        document.getElementById('quantityError').innerHTML = ""
+        if (typeof(parseInt(reservation.quantity)) != "number") {
+            document.getElementById('quantity').style.borderColor = "red";
+            document.getElementById('quantityError').innerHTML = "It must be a number!"
+            quantityError = true;
+        } else {
+            quantityError = false;
+            document.getElementById('quantity').style.borderColor = "black";
+            document.getElementById('quantityError').innerHTML = ""
+        }
     }
 
     //validate location
