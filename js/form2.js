@@ -1,13 +1,4 @@
-//functionality to the form inputs
-function ValidateEmail(mail) {
-    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail)) {
-        return (true)
-    }
-
-    return (false)
-}
-
-
+//Success function
 function Success() {
     document.getElementById('success').style.display = "block";
 
@@ -15,7 +6,7 @@ function Success() {
 
 
 
-const submitBtn = document.querySelectorAll(".btn-submit")
+var submitBtn = document.querySelectorAll(".btn-submit");
 submitBtn.forEach((btn) => btn.addEventListener("click", function(e) {
     e.preventDefault();
     validate();
@@ -36,7 +27,7 @@ function validate() {
 
     var location = document.reserve.location.value;
     var terms = document.reserve.checkbox1;
-    var signup = document.reserve.checkbox2;
+    //var signup = document.reserve.checkbox2;
 
     var firstError = true;
     var lastError = true;
